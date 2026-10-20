@@ -7,21 +7,35 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private Rigidbody2D _cuerpoRigido2D;
     [SerializeField] private DetectorSuelo _detectorSuelo;
 
+    private float _movimientoHorizontal;
+    private bool _intentandoSaltar;
+
     private void Awake()
     {
-        _cuerpoRigido2D = GetComponent<Rigidbody2D>();
+        if (_cuerpoRigido2D == null)
+            _cuerpoRigido2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        _movimientoHorizontal = Input.GetAxisRaw("Horizontal") * _velocidadMovimiento;
+
+        if (Input.GetKeyDown(KeyCode.Space) && _detectorSuelo.estaEnSuelo)
+        {
+            _intentandoSaltar = true;
+        }
     }
 
     private void FixedUpdate()
     {
-        if (_detectorSuelo.estaEnSuelo)
+
+        _cuerpoRigido2D.linearVelocity = new Vector2(_movimientoHorizontal, _cuerpoRigido2D.linearVelocity.y);
+
+        if (_intentandoSaltar)
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
-                Debug.Log("Oprimí la tecla");
-            }
+            _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
+            _intentandoSaltar = false;
+            Debug.Log("¡Salto ejecutado!");
         }
-        _cuerpoRigido2D.linearVelocity = new Vector2(1 * _velocidadMovimiento, _cuerpoRigido2D.linearVelocity.y);
     }
 }
