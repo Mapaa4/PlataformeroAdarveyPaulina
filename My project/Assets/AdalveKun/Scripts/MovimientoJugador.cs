@@ -35,7 +35,8 @@ public class MovimientoJugador : MonoBehaviour
         {
             _cuerpoRigido2D.AddForce(Vector2.up * _fuerzaSalto, ForceMode2D.Impulse);
             _intentandoSaltar = false;
-            Debug.Log("¡Salto ejecutado!");
+            Debug.Log("¡Salto Saltado Saltador!");
+            // no se que hacer con mi vida
         }
     }
 }
