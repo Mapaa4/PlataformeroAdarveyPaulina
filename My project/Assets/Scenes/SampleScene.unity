@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 292639295}
   - component: {fileID: 292639294}
   - component: {fileID: 292639293}
-  - component: {fileID: 292639292}
+  - component: {fileID: 292639296}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -183,19 +183,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &292639292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292639291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7919169e654fb44d839b9f620d01d86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Key
-  keyID: LLAVE AZULADA
 --- !u!60 &292639293
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -320,6 +307,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &292639296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292639291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7919169e654fb44d839b9f620d01d86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Key
 --- !u!1 &386124123
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,7 +331,6 @@ GameObject:
   - component: {fileID: 386124125}
   - component: {fileID: 386124124}
   - component: {fileID: 386124127}
-  - component: {fileID: 386124128}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -472,19 +470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28a339e4b24c64840a101709ab69990e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
-  requiredKeyID: LLAVE AZULADA
---- !u!114 &386124128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386124123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf457431cab10f4baf26fc81644ecb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -14900,7 +14885,6 @@ GameObject:
   - component: {fileID: 1935815345}
   - component: {fileID: 1935815350}
   - component: {fileID: 1935815351}
-  - component: {fileID: 1935815352}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -15092,18 +15076,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f7de1f0826b3c448727edc4c0d2e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
---- !u!114 &1935815352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935815344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf457431cab10f4baf26fc81644ecb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoorTrigger
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,21 +1,25 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    // FACK ME
-    private HashSet<string> collectedKeys = new HashSet<string>();
+    private int keysCollected = 0;
 
-    public void AddKey(string keyID)
+    public void AddKey()
     {
-        if (!collectedKeys.Contains(keyID))
-        {
-            collectedKeys.Add(keyID);
-        }
+        keysCollected++;
+        Debug.Log("¡Llave recolectada! Total de llaves: " + keysCollected);
     }
 
-    public bool HasKey(string keyID)
+    public bool HasKey()
     {
-        return collectedKeys.Contains(keyID);
+        return keysCollected > 0;
+    }
+
+    public void UseKey()
+    {
+        if (keysCollected > 0)
+        {
+            keysCollected--;
+        }
     }
 }

@@ -2,37 +2,27 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    [Tooltip("ID de la llave necesaria para abrir esta puerta. Déjalo vacío si no requiere llave.")]
-    public string requiredKeyID;
-
-    // ¿PORQUE ELEGI ESTA CARRERA?
-    public void Interact(GameObject player)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // ESTOY MAMADO
-        if (!string.IsNullOrEmpty(requiredKeyID))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerInventory playerInventory = player.GetComponent<PlayerInventory>();
+            PlayerInventory playerInventory = collision.gameObject.GetComponent<PlayerInventory>();
 
-            if (playerInventory != null && playerInventory.HasKey(requiredKeyID))
+            if (playerInventory != null && playerInventory.HasKey())
             {
-                OpenAndDestroyDoor();
-                Debug.Log("¡Puerta abierta y destruida con éxito!");
+                playerInventory.UseKey();
+                OpenDoor();
             }
             else
             {
-                Debug.Log("Necesitas la llave: " + requiredKeyID + " para abrir esta puerta.");
+                Debug.Log("La puerta está cerrada. Necesitas una llave.");
             }
-        }
-        else
-        {
- // :(
-            OpenAndDestroyDoor();
         }
     }
 
-    void OpenAndDestroyDoor()
+    void OpenDoor()
     {
- // PUTAA
-        Destroy(gameObject);
+        Debug.Log("¡Puerta abierta!");
+        gameObject.SetActive(false);
     }
 }

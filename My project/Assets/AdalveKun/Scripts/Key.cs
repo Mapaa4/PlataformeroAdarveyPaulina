@@ -2,19 +2,15 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    [Tooltip("Identificador único para la llave (ej. 'LlaveRoja', 'LlavePrincipal')")]
-    public string keyID;
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
+            PlayerInventory playerInventory = collision.GetComponent<PlayerInventory>();
 
             if (playerInventory != null)
             {
-                playerInventory.AddKey(keyID);
-                Debug.Log("Llave recogida: " + keyID);
+                playerInventory.AddKey();
                 Destroy(gameObject);
             }
         }
