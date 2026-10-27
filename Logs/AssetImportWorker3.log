@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.25f1 (e1dba0a9aba4) revision 14801824'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206" at "2026-10-27T15:02:19.5886804Z"
 OS: 'Windows 11  (10.0.22631) Education' Language: 'en' Physical Memory: 32437 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206" at "2026-10-20T14:57:52.3396296Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-10-20T14:57:52Z
+Date: 2026-10-27T15:02:19Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.25f1\Editor\Unity.exe
@@ -19,11 +19,11 @@ C:/juasjuasajuas/PlataformeroAdarveyPaulina
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-55596
+50115
 -parentPid
-8128
+27140
 -analyticsCloudUserId
-anonymous
+4674232479048
 -analyticsLocalProjectId
 9f86b2a099c715546b2641db76f7dd78
 -editorAnalyticsEnabled
@@ -80,14 +80,14 @@ C:/juasjuasajuas/PlataformeroAdarveyPaulina
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [10440]  Target information:
+Player connection [22624]  Target information:
 
-Player connection [10440]  * "[IP] 10.4.14.118 [Port] 0 [Flags] 2 [Guid] 4241783063 [EditorId] 4241783063 [Version] 1048832 [Id] WindowsEditor(7,b14_206_01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22624]  * "[IP] 10.4.14.118 [Port] 0 [Flags] 2 [Guid] 890176393 [EditorId] 890176393 [Version] 1048832 [Id] WindowsEditor(7,b14_206_01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10440]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4241783063 [EditorId] 4241783063 [Version] 1048832 [Id] WindowsEditor(7,b14_206_01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22624]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 890176393 [EditorId] 890176393 [Version] 1048832 [Id] WindowsEditor(7,b14_206_01) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10440] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [10440] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22624] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22624] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -110,18 +110,18 @@ GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 	ResponseStatus: Unsupported protocol version '1.18.3'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-b14s206"
 [Licensing::IpcConnector] LicenseClient-b14s206 channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206-6000.3.25" at "2026-10-20T14:57:53.1049965Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 21312, path: "C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206-6000.3.25" at "2026-10-27T15:02:20.2842524Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 18908, path: "C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.3+d7ffd15
-  Session Id:              4f44c4ddc2a24e7ea95e1f6f863c04f8
-  Correlation Id:          63866d0ac23330bbc14c360bc5c78b23
-  External correlation Id: 2749562078652743123
+  Session Id:              8365fa494e0f4da6aaf0f85804c85799
+  Correlation Id:          5478505dee5469223d4d339f3d0dd326
+  External correlation Id: 4901657891956702568
   Machine Id:              op5mgGIO12FrDkOE+TXv7uh5uO0=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-b14s206-6000.3.25" (connect: 0.00s, validation: 0.01s, handshake: 0.01s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206-6000.3.25-notifications" at "2026-10-20T14:57:53.1208299Z"
-[Licensing::Module] Licensing Background thread has ended after 0.78s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-b14s206-6000.3.25" (connect: 0.00s, validation: 0.02s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-b14s206-6000.3.25-notifications" at "2026-10-27T15:02:20.307157Z"
+[Licensing::Module] Licensing Background thread has ended after 0.72s
 d3d12: failed to query info queue interface (0x80004002).
 Direct3D:
     Version:         Direct3D 12 [level 12.2]
@@ -134,65 +134,4 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56368
-Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 4674232479048-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.007068 seconds.
-- Loaded All Assemblies, in  0.513 seconds
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Package Manager log level set to [2]
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.381 seconds
-Domain Reload Profiling: 890ms
-	BeginReloadAssembly (153ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (0ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (234ms)
-		LoadAssemblies (150ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (229ms)
-			TypeCache.Refresh (227ms)
-				TypeCache.ScanAssembly (212ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (382ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (344ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (60ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (71ms)
-			ProcessInitializeOnLoadAttributes (141ms)
-			ProcessInitializeOnLoadMethodAttributes (69ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (0ms)
-[Licensing::Client] Successfully resolved entitlement details
-========================================================================
-Worker process is ready to serve import requests
-Import Worker Mode flag is 0x00
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.230 seconds
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
