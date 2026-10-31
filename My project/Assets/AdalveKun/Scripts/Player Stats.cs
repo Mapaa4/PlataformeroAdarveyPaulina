@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private int _vidaMaxima = 100;
     [SerializeField] private UIManager _uiManager;
     [SerializeField] private GameManager _gameManager;
+
     public void RestarVida(int daño)
     {
         _puntosVida -= daño;
@@ -14,6 +15,7 @@ public class PlayerStats : MonoBehaviour
         ActualizarBarra();
         Debug.Log("Vida actual: " + _puntosVida);
     }
+
     public void SumarVida(int cantidad)
     {
         _puntosVida += cantidad;
@@ -26,28 +28,32 @@ public class PlayerStats : MonoBehaviour
         ActualizarBarra();
         Debug.Log("Vida actual: " + _puntosVida);
     }
+
     private void ActualizarBarra()
     {
         float porcentajeVida = (float)_puntosVida / _vidaMaxima;
+
         if (_uiManager != null)
         {
-            _uiManager.ActualizarFillAmount(porcentajeVida);
+            _uiManager.ActualizarFillVida(porcentajeVida);
 
             if (porcentajeVida <= 0.25f)
             {
-                _uiManager.ColorBarra(Color.red);
+                _uiManager.ColorBarraVida(Color.red);
             }
             else if (porcentajeVida <= 0.6f)
             {
-                _uiManager.ColorBarra(Color.yellow);
+                _uiManager.ColorBarraVida(Color.yellow);
             }
             else
             {
-                _uiManager.ColorBarra(Color.green);
+                _uiManager.ColorBarraVida(Color.green);
             }
+
             if (_puntosVida <= 0)
             {
-                _gameManager.PausarElJuego();
+                if (_gameManager != null)
+                    _gameManager.PausarElJuego();
             }
         }
     }

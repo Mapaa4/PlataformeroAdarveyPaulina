@@ -2,24 +2,40 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private int keysCollected = 0;
-
-    public void AddKey()
+    public bool hasBlueKey = false;
+    public bool hasOrangeKey = false;
+    public bool hasGreenKey = false;
+    public void AddKey(string keyColor)
     {
-        keysCollected++;
-        Debug.Log("¡Llave recolectada! Total de llaves: " + keysCollected);
-    }
-
-    public bool HasKey()
-    {
-        return keysCollected > 0;
-    }
-
-    public void UseKey()
-    {
-        if (keysCollected > 0)
+        switch (keyColor.ToLower())
         {
-            keysCollected--;
+            case "blue":
+                hasBlueKey = true;
+                Debug.Log("¡Llave Azul cogida!");
+                break;
+            case "orange":
+                hasOrangeKey = true;
+                Debug.Log("¡Llave Naranja mascada!");
+                break;
+            case "green":
+                hasGreenKey = true;
+                Debug.Log("¡Llave Verde mordida!");
+                break;
+        }
+    }
+    public bool HasAnyKey()
+    {
+        return hasBlueKey || hasOrangeKey || hasGreenKey;
+    }
+
+    public bool HasKeyOfType(string keyColor)
+    {
+        switch (keyColor.ToLower())
+        {
+            case "blue": return hasBlueKey;
+            case "orange": return hasOrangeKey;
+            case "green": return hasGreenKey;
+            default: return false;
         }
     }
 }
