@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class unpuñomujer : MonoBehaviour
+public class ungolpe : MonoBehaviour
 {
     [SerializeField] private PlayerStats _playerstats;
     private void OnCollisionEnter2D(Collision2D collision)
